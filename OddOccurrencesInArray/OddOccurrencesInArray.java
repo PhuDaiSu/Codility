@@ -13,5 +13,3 @@ class Solution {
         return found.stream().findFirst().orElseGet(null);
     }
 }
-
-// https://app.codility.com/demo/results/trainingW2RETV-U6W/
