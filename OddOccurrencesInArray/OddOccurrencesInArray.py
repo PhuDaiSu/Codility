@@ -6,3 +6,5 @@ def solution(A):
         else:
             found.add(a)
     return found.pop()
+
+# https://app.codility.com/demo/results/trainingXY4E29-3CC/
