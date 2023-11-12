@@ -1,0 +1,1 @@
+Collection of Codility questions - Created using [CodilitySync](https://github.com/carminechoi/CodilitySync)
