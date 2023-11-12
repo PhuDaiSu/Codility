@@ -17,5 +17,3 @@ class Solution {
         return maxGap;
     }
 }
-
-// https://app.codility.com/demo/results/trainingUN78M6-FGJ/
