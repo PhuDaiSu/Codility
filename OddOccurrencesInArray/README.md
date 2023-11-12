@@ -15,7 +15,7 @@ For example, in array A such that:
 </ul>
 
 Write a function:
-<p style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>def solution(A)</tt></p>
+<p style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>class Solution { public int solution(int[] A); }</tt></p>
 that, given an array A consisting of N integers fulfilling the above conditions, returns the value of the unpaired element.
 For example, given array A such that:
   A[0] = 9  A[1] = 3  A[2] = 9
