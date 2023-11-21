@@ -3,14 +3,17 @@ fun solution(A: IntArray): Int {
     var result = 0
     for (i in 0 until size) {
         val a = A[i]
+        if (a < 0) {
+            continue
+        }
         if (i + a >= size - 1) {
             result += size - 1 - i
         } else {
             result += a
             val fromJ = i + a + 1
-            for (j in fromJ until size - 1) {
+            for (j in fromJ until size) {
                 if (A[j] > j - fromJ) {
-                    result += 1
+                    result++
                 }
             }
         }
