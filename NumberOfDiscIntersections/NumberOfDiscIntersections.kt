@@ -1,8 +1,5 @@
 fun solution(A: IntArray): Int {
     val size = A.size
-    if (size > 100_000) {
-        return -1
-    }
     var result = 0
     for (i in 0 until size) {
         val a = A[i]
@@ -11,7 +8,7 @@ fun solution(A: IntArray): Int {
         } else {
             result += a
             val fromJ = i + a + 1
-            for (j in fromJ until size) {
+            for (j in fromJ until size - 1) {
                 if (A[j] > j - fromJ) {
                     result += 1
                 }
