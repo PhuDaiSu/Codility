@@ -19,7 +19,7 @@ There are eleven (unordered) pairs of discs that intersect, namely:
 </ul>
 
 Write a function:
-<p style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>def solution(A)</tt></p>
+<p style="font-family: monospace; font-size: 9pt; display: block; white-space: pre-wrap"><tt>fun solution(A: IntArray): Int</tt></p>
 that, given an array A describing N discs as explained above, returns the number of (unordered) pairs of intersecting discs. The function should return −1 if the number of intersecting pairs exceeds 10,000,000.
 Given array A shown above, the function should return 11, as explained above.
 Write an <b><b>efficient</b></b> algorithm for the following assumptions:
