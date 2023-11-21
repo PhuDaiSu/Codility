@@ -1,6 +1,12 @@
 def solution(A):
     size = len(A)
+    sortedA = sorted(A)
     result = 0
+
+    for i in range(len(sortedA)):
+        
+
+
     for i in range(size):
         a = A[i]
         if i + a >= size - 1:
