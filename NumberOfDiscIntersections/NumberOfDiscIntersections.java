@@ -4,7 +4,7 @@ class Solution {
         int result = 0;
         for (int i = 0; i < size; i++) {
             int a = A[i];
-            if (i + a >= size - 1) {
+            if (i + (long) a >= size - 1) {
                 result += size - 1 - i;
             } else {
                 result += a;
