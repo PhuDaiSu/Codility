@@ -3,10 +3,7 @@ fun solution(A: IntArray): Int {
     var result = 0
     for (i in 0 until size) {
         val a = A[i]
-        if (a < 0) {
-            continue
-        }
-        if (i + a >= size - 1) {
+        if (i + a.toLong() >= size - 1) {
             result += size - 1 - i
         } else {
             result += a
