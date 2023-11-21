@@ -1,5 +1,3 @@
-// import kotlin.math.*
-
 fun solution(A: IntArray): Int {
     val size = A.size
     var result = 0
@@ -9,6 +7,9 @@ fun solution(A: IntArray): Int {
 
         if (i + a >= size - 1) {
             result += size - 1 - i
+            if (result > 10_000_000) {
+                return -1
+            }
         } else {
             result += a
             val fromJ = i + a + 1
@@ -16,6 +17,9 @@ fun solution(A: IntArray): Int {
             for (j in fromJ until size) {
                 if (A[j] > j - fromJ) {
                     result += 1
+                    if (result > 10_000_000) {
+                        return -1
+                    }
                 }
             }
         }
